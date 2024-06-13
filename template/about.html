@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Arts Event Management</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .banner {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+        .content h2 {
+            color: #333333;
+        }
+        .event-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .event {
+            background-color: #fafafa;
+            margin: 10px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .event img {
+            width: 100%;
+            height: auto;
+        }
+        .event h3 {
+            color: #4CAF50;
+        }
+        .footer {
+            text-align: center;
+            background-color: #333333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>College Arts Event Management</h1>
+        </header>
+        <div class="banner">
+            <img src="{% static 'images/banner about1.jpg' %}" alt="Banner Image">
+        </div>
+        <div class="content">
+            <h2>Upcoming Events</h2>
+            <div class="event-list">
+                <div class="event">
+                    <img src="{% static 'images/arts exhin.jpg' %}" alt="Event Image">
+                    <h3>Art Exhibition</h3>
+                    <p>Join us for an amazing art exhibition showcasing works from talented students.</p>
+                </div>
+                <div class="event">
+                    <img src="{% static 'images/music.jpg' %}" alt="Event Image">
+                    <h3>Music Concert</h3>
+                    <p>Experience an evening of mesmerizing music performed by our college bands and solo artists.</p>
+                </div>
+                <div class="event">
+                    <img src="{% static 'images/drama.jpg' %}" alt="Event Image">
+                    <h3>Drama Night</h3>
+                    <p>Watch captivating drama performances by our talented theatre group.</p>
+                </div>
+                <div class="event">
+                    <img src="{% static 'images/danceshow.jpg' %}" alt="Event Image">
+                    <h3>Dance Show</h3>
+                    <p>Enjoy a night of spectacular dance performances by our energetic dance teams.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 College Arts Event Management. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+

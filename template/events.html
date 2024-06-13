@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block title%}
+Events
+{% endblock %}
+
+        {%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Arts Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .event {
+            display: inline-block;
+            margin: 20px;
+        }
+        .event img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .event img:hover {
+            transform: scale(1.1);
+        }
+        .event-title {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>College Arts Events</h1>
+        <div class="event">
+            <img src="{% static 'images/arts exhin.jpg' %}" alt="Art Exhibition">
+            <div class="event-title">Art Exhibition</div>
+        </div>
+        <div class="event">
+            <img src="{% static 'images/music.jpg' %}" alt="Music Concert">
+            <div class="event-title">Music Concert</div>
+        </div>
+        <div class="event">
+            <img src="{% static 'images/drama.jpg' %}" alt="Drama Night">
+            <div class="event-title">Drama Night</div>
+        </div>
+        <div class="event">
+            <img src="{% static 'images/danceshow.jpg' %}" alt="Dance Show">
+            <div class="event-title">Dance Show</div>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}
